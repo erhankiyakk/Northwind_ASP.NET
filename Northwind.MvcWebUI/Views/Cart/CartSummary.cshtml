@@ -1,0 +1,8 @@
+﻿@model Northwind.Entities.Models.Cart
+@{
+    ViewBag.Title = "CartSummary";
+}
+
+        <b>Your cart @Model.cartLines.Sum(x => x.Quantity) product Total=</b>
+        @Model.Total.ToString("c")
+    @Html.ActionLink("Checkout", "Index", "Cart")

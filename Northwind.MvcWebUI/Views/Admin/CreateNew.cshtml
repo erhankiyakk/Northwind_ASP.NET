@@ -1,0 +1,13 @@
+﻿@model Northwind.Entities.Product
+@{
+    ViewBag.Title = "CreateNew";
+}
+
+<h2>Create New</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <input type="submit" value="Save"/>
+}
+

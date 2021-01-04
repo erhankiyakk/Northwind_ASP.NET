@@ -1,0 +1,12 @@
+﻿@model Northwind.Entities.Models.ShippingDetails
+@{
+    ViewBag.Title = "Checkout";
+}
+
+<h2>Checkout Now</h2>
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <input type="submit"  value="Complete Checkout"/>
+}
+
